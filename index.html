@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Chat</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <script src="script.js"></script>
+  </head>
+  <body onload="onLoad()">
+    <h1>Chat</h1>
+
+    <div id="registration">
+      <h2>Registration</h2>
+      Fullname: <input type="text" id="reg_fullname"><br>
+      User name: <input type="text" id="reg_username"><br>      
+      Password: <input type="password" id="reg_password"><br>
+      E-mail: <input type="email" id="reg_email"><br>
+      <button onclick="registration()">Registry</button>
+    </div>
+
+    <div id="login">
+      <h2>Login</h2>
+      User name: <input type="text" id="username"><br>      
+      Password: <input type="password" id="password"><br>
+      <button onclick="login()">Login</button>
+      
+    </div>
+
+    <br><br>
+
+    <div id="chat">
+
+      <input type="text" id="nick" placeholder="nickname">
+
+      <br><br>
+
+      <input type="text" id="message">
+      <button onclick="sendMessagePOST()">Send</button>
+
+      <div id="messageList">...</div>
+
+    </div>
+
+  </body>
+</html>
